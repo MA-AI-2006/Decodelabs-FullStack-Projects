@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Project 1 | Responsive Architecture</title>
+    <!-- Google Fonts: Montserrat for Headlines, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="main-header">
+        <div class="logo">Decode<span>Labs</span></div>
+        <button class="hamburger" id="menuToggle" aria-label="Toggle Menu">☰</button>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA (Using CSS Grid Layout) -->
+    <div class="page-grid">
+        
+        <!-- SIDEBAR (Hidden on mobile, visible on desktop) -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>Quick Info</h3>
+                <p>Location: Lucknow, India</p>
+                <p>Status: Available for Internship</p>
+                <div class="status-dot"></div>
+            </div>
+        </aside>
+
+        <!-- MAIN SECTIONS -->
+        <main class="content-area">
+            
+            <!-- HERO SECTION -->
+            <section id="home" class="hero">
+                <article>
+                    <h1>Architecting the <br><span>Mobile Web.</span></h1>
+                    <p>A strategic execution framework built with pure HTML5, CSS3, and Vanilla JS. No frameworks, just fundamentals.</p>
+                    <a href="#about" class="btn-primary">Explore Blueprint</a>
+                </article>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="section-card">
+                <h2>The Vision</h2>
+                <p>The web is a dynamic, inclusive information system. This project demonstrates semantic integrity, 2025 UI/UX compliance, and mobile-first architecture.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Semantic HTML</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>CSS Grid</h3>
+                        <p>Macro Layout</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Flexbox</h3>
+                        <p>Micro Components</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES/TOOLS SECTION -->
+            <section id="services" class="section-card">
+                <h2>The Toolkit</h2>
+                <div class="tools-flex">
+                    <div class="tool-box html-box">HTML5<br><span>Infrastructure</span></div>
+                    <div class="tool-box css-box">CSS3<br><span>Skin & Style</span></div>
+                    <div class="tool-box js-box">JavaScript<br><span>Logic & State</span></div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="section-card">
+                <h2>Start Building</h2>
+                <p>Ready to master the fundamentals? Let's connect.</p>
+                <button class="btn-primary" id="actionBtn">Initialize Project</button>
+                <p id="feedbackMsg" class="feedback-msg"></p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2025 DecodeLabs Intern. Built with raw fundamentals.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
