@@ -163,7 +163,6 @@ a {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    /* Prevents button text from getting cut off */
     max-width: 100%; 
     white-space: normal;
     text-align: center;
@@ -185,7 +184,7 @@ a {
 }
 
 .section-card h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Reduced slightly */
     margin-bottom: 1rem;
     color: var(--text-main);
 }
@@ -203,7 +202,7 @@ a {
 }
 
 .stat-item {
-    flex: 1 1 120px; 
+    flex: 1 1 120px; /* Grows, shrinks, but won't go below 120px */
     text-align: center;
     padding: 1rem;
     background: var(--bg-color);
@@ -338,6 +337,6 @@ a {
     }
 
     .tool-box {
-        font-size: 1.1rem; 
+        font-size: 1.1rem; /* Bigger text on desktop */
     }
 }
